@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: zuul-service
+
+zuul:
+  prefix: /api
+  routes:
+    book-service:
+      path: /book/**
+      url: http://localhost:8081/
+
